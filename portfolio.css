@@ -1,0 +1,481 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+/* Header styles */
+header {
+    background-color: palevioletred;
+    color: white;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-family: Arial Black, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.hero-content img {
+    border: 5px solid palevioletred; /* Set border width and color */
+    border-radius: 50%; /* Optional: makes the border round; adjust or remove if needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for a subtle effect */
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: gainsboro;
+    border-radius: 50px;
+}
+
+/* Button styling */
+.hero button {
+    background:grey; /* Primary color */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem; /* Adjusted padding for size */
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+   
+}
+
+.hero button:hover {
+    background: palevioletred; /* Darker shade of the primary color */
+    transform: translateY(-2px); /* Slightly move the button up */
+}
+
+.hero button:active {
+    background: blue; /* Even darker shade of the primary color */
+    transform: translateY(0); /* Button returns to original position */
+}
+
+/* Hero section styles */
+.hero {
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-family: arial black;
+}
+
+.highlight {
+    color: palevioletred;
+    font-size: 2.5rem;
+}
+
+/* Info section styles */
+/* Info Section Styling */
+.info {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 0; /* Aligns to the top of the viewport */
+    right: 0; /* Aligns to the right side of the viewport */
+    padding: 20px; /* Space around the content */
+    margin: 20px; /* Space from the edges of the viewport */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+/* Adjust the p tag inside .info if needed */
+.info p {
+    font-size: 25px;
+    margin-bottom: 10px; /* Space below the paragraph */
+}
+
+/* Ensure social-links aligns well */
+.social-links {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of each icon */
+    height: 40px; /* Size of each icon */
+    border-radius: 50%;
+   
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+/* Portfolio section styles */
+.portfolio {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.portfolio .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+    text-decoration: underline;
+    font-family: Arial Black;
+}
+
+/* Portfolio Items */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between items */
+}
+
+.portfolio-item {
+    width: calc(50% - 20px); /* Adjust width for spacing */
+    position: relative;
+    background-image: url('images/trans.png'); 
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Adjust height as needed */
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.portfolio-item {
+    width: calc(50% - 20px); /* Adjust width for spacing */
+    position: relative;
+    background-image: url('images/bank.png'); 
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Adjust height as needed */
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background for Transportation Company */
+.portfolio-item.transportation {
+    background-image: url('images/trans.png');
+    /* Replace with actual path */
+}
+
+/* Background for Banking App */
+.portfolio-item.banking {
+    background-image: url('images/banking-bg.jpg'); /* Replace with actual path */
+}
+
+/* Project Info styling */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+    text-align: center;
+    font-family: arial black;
+}
+
+.project-info h2,
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.project-info a:hover {
+    text-decoration: none;
+}
+
+/* Hover effect for portfolio items */
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-thumbnail img:hover {
+    transform: scale(1.1);
+}
+ 
+/* Services section styles */
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background: black;
+    color:white;
+}
+
+.services h1 {
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-size: 36px;
+    color: white;
+    font-family: Arial black, sans-serif;
+}
+
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-items h2 {
+    background-image: url('images/webdes.png.jpg'); /* Semi-transparent background color for text readability */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    position: relative;
+    height: 300px; /* Adjust as needed */
+   
+}
+
+.service-item h3 {
+    background-image: url('images/webdev.png.png'); /* Semi-transparent background color for text readability */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    position: relative;
+    height: 300px; /* Adjust as needed */
+   
+}
+
+/* Background image for Web Design */
+.service-item.design {
+    background-image: url('images/web-design-bg.jpg'); /* Replace with actual image path */
+}
+
+/* Background image for Web Development */
+.service-item.development {
+    background-image: url('images/web-development-bg.jpg'); /* Replace with actual image path */
+}
+
+/* Optional: Style for headings within service items */
+.service-item h2,
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Optional: Style for paragraphs within service items */
+.service-item p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: arial black;
+}
+
+
+/* About section styles */
+.about {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.about h2 {
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    font-family: arial black;
+}
+
+/* Skills section styles */
+.skills {
+    text-align: center;
+    background-color: black;
+    padding: 50px 0;
+}
+
+.skills h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white;
+    font-family: arial black;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: arial black;
+}
+
+.skills-list h3 {
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list ul li i {
+    margin-right: 10px;
+}
+
+.skills-list ul li .fab {
+    color: #007bff;
+}
+
+.skills-list ul li .fas {
+    color: #28a745;
+}
+
+/* Footer styles */
+footer {
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial Black, Arial, sans-serif;
+}
+
+footer .social-links {
+    margin-bottom: 30px;
+}
+
+footer .social-links a {
+    font-size: 2rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: blue;
+}
+/* Icons section*/
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 30px; 
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 50px;  
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #333;
+    color: white; 
+    text-decoration: none;
+    font-size: 24px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Hover Effects */
+.social-links a:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+
+
+.fab, .fas {
+    transition: transform 0.3s ease; 
+}
+
+.social-links a:hover .fab, .social-links a:hover .fas {
+    transform: scale(1.1); 
+}
